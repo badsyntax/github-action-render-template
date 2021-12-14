@@ -62,6 +62,10 @@ jobs:
 | -------- | -------------------------------------------------------------------------- | -------------------------- |
 | `result` | Escaped rendered template which can be used an input to a different Action | `(your rendered template)` |
 
+## Related Projects
+
+- [badsyntax/github-action-issue-comment](https://github.com/badsyntax/github-action-issue-comment)
+
 ## Support
 
 - 👉 [Submit a bug report](https://github.com/badsyntax/github-action-render-template/issues/new?assignees=badsyntax&labels=bug&template=bug_report.md&title=)
