@@ -1,4 +1,4 @@
-name: 'Render Template'
+name: 'Render Template (Handlebars)'
 description: 'Renders a handlebars template with custom inputs'
 author: 'Richard Willis <willis.rh@gmail.com>'
 branding:
