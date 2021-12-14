@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ./
+      - uses: badsyntax/github-action-render-template@v0.0.1
         name: Render Template
         id: render-template
         with:
