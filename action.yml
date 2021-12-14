@@ -1,0 +1,19 @@
+name: 'Render Template'
+description: 'Renders a handlebars template with custom inputs'
+author: 'Richard Willis <willis.rh@gmail.com>'
+branding:
+  icon: 'upload-cloud'
+  color: 'gray-dark'
+inputs:
+  template:
+    required: true
+    description: 'The path to the handlebars template file. For example: ./.github/pr-comment-template.hbs'
+  inputs:
+    required: true
+    description: 'A JSON object of key value pairs. For example: {"key":"value"}'
+outputs:
+  result:
+    description: 'Escaped rendered template'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
