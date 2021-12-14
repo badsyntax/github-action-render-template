@@ -1,6 +1,8 @@
 # Render Template GitHub Action
 
+[![Build & Test](https://github.com/badsyntax/github-action-render-template/actions/workflows/test.yml/badge.svg)](https://github.com/badsyntax/github-action-render-template/actions/workflows/test.yml)
 [![Render Template](https://github.com/badsyntax/github-action-render-template/actions/workflows/render-template.yml/badge.svg)](https://github.com/badsyntax/github-action-render-template/actions/workflows/render-template.yml)
+[![CodeQL](https://github.com/badsyntax/github-action-render-template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/badsyntax/github-action-render-template/actions/workflows/codeql-analysis.yml)
 
 A super simple GitHub Action to render a handlebars template.
 
@@ -8,7 +10,7 @@ Features
 
 - Renders any handlebars template
 - Accepts any inputs via JSON string
-- Outputs escape string that can be used as input to a different Action
+- Outputs an escaped string that can be used as an input to a different Action
 
 ## Getting Started
 
