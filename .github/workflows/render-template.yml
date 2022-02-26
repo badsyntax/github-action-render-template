@@ -25,8 +25,15 @@ jobs:
               "lastName":"Marley"
             }
 
-      - name: Output Rendered Template
+      - name: Test Rendered Template
         run: |
-          echo "Rendered Template: $OUTPUT"
+          TRIMMED_OUTPUT=$(echo "$OUTPUT" | tr -d '\n')
+          EXPECTED="<p>Bob Marley</p>"
+          echo "Template: $TRIMMED_OUTPUT"
+          echo "Expected: $EXPECTED"
+          if [ "$TRIMMED_OUTPUT" != "$EXPECTED" ]; then
+            echo "Template does not match."
+            exit 1
+          fi
         env:
           OUTPUT: ${{ steps.render-template.outputs.result }}
