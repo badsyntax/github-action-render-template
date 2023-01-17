@@ -10,7 +10,7 @@ jobs:
   check-dist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.1.0
+      - uses: actions/checkout@v3.3.0
       - name: Set Node.js 16.x
         uses: actions/setup-node@v3
         with:
@@ -31,7 +31,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.1.0
+      - uses: actions/checkout@v3.3.0
       - name: Set Node.js 16.x
         uses: actions/setup-node@v3
         with:
